@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import FoodCard from './Components/FoodCard';
+import data from './data'
+
 function App() {
+
+  let [foodData, setFoodData] = React.useState(data);
+  console.log(foodData)
+  function changeFoodChoosedState(id: number){
+    setFoodData(previosState => {
+      return previosState.map(food => {
+        if(food.id === id && food.available) return {...food, choosed: !food.choosed};
+        else return {...food}
+      });
+    });
+  }
+  const foodCards = foodData.map(food => <FoodCard {...food} key={food.id} changeFoodChoosedState={()=>changeFoodChoosedState(food.id)} />)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Ты сегодня покормил кота?</h1>
+      <div className='food-cards__container'>
+        {foodCards}
+      </div>
     </div>
   );
 }

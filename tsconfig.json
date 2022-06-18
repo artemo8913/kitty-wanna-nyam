@@ -13,7 +13,9 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "esnext",                               /* Specify what module code is generated. */
+    "rootDir": "./src",
+    "outDir": "./build", 
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
