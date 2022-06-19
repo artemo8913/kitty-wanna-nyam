@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kitty-wanna-nyam/static/css/main.11006104.css",
+    "main.js": "/kitty-wanna-nyam/static/js/main.ac136c5e.js",
+    "static/media/bg.png": "/kitty-wanna-nyam/static/media/bg.8b93e2127ee44e2a8146.png",
+    "index.html": "/kitty-wanna-nyam/index.html",
+    "main.11006104.css.map": "/kitty-wanna-nyam/static/css/main.11006104.css.map",
+    "main.ac136c5e.js.map": "/kitty-wanna-nyam/static/js/main.ac136c5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11006104.css",
+    "static/js/main.ac136c5e.js"
+  ]
+}
