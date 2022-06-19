@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/kitty-wanna-nyam/static/css/main.11006104.css",
-    "main.js": "/kitty-wanna-nyam/static/js/main.ac136c5e.js",
-    "static/media/bg.png": "/kitty-wanna-nyam/static/media/bg.8b93e2127ee44e2a8146.png",
-    "index.html": "/kitty-wanna-nyam/index.html",
-    "main.11006104.css.map": "/kitty-wanna-nyam/static/css/main.11006104.css.map",
-    "main.ac136c5e.js.map": "/kitty-wanna-nyam/static/js/main.ac136c5e.js.map"
+    "main.css": "./static/css/main.399585bf.css",
+    "main.js": "./static/js/main.a57045b2.js",
+    "static/media/IE11Tombstone.png": "./static/media/IE11Tombstone.c80ae84276ad43b6ec19.png",
+    "static/media/kitty.png": "./static/media/kitty.4653febce4c21301b031.png",
+    "static/media/bg.png": "./static/media/bg.8b93e2127ee44e2a8146.png",
+    "index.html": "./index.html",
+    "main.399585bf.css.map": "./static/css/main.399585bf.css.map",
+    "main.a57045b2.js.map": "./static/js/main.a57045b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.11006104.css",
-    "static/js/main.ac136c5e.js"
+    "static/css/main.399585bf.css",
+    "static/js/main.a57045b2.js"
   ]
 }
