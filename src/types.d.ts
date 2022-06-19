@@ -1,10 +1,10 @@
 type dish = {
     id: number,
     foodWith: string,
-    portions: string,
-    giftMouses: string,
-    happyCustomer:string,
-    weight: string,
+    portions: number,
+    giftMouses: number,
+    happyCustomer:boolean,
+    weight: number,
     available: boolean,
     choosed: boolean,
     choosedText: string
