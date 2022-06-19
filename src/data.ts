@@ -17,7 +17,7 @@ const dishes: Array<dish> = [
         giftMouses: '2 мыши в подарок',
         happyCustomer:'',
         weight: '2',
-        available: true,
+        available: false,
         choosed: false,
         choosedText: 'Головы щучьи с чесноком да свежайшая сёмгушка.'
     },

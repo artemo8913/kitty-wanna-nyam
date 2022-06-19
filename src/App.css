@@ -1,6 +1,30 @@
+.browser-notification{
+    position: absolute;
+    text-align: center;
+    background-color: #F2F2F2;
+    max-width: 350px;
+    min-height: 250px;
+    top: 30px;
+    right: 10px;
+    z-index: 2;
+    border: 1px solid #1698D9;
+    border-radius: 12px;
+}
+.browser-notification__close{
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+    left: 40%;
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+}
+.browser-notification__img{
+    width: 90%;
+}
 .App{
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,8 +33,8 @@
     font-weight: 400;
     font-size: 16px;
     background-color: #000000;
+    background-image: url(../public/Images/bg.png);
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%), url(../public/Images/bg.png);
-    background-image: -ms-linear-gradient(top, #000000 0%,#e3eaed 37%,#000000 100%), url(../public/Images/bg.png);
     padding-bottom: 5px;
 }
 h1{
@@ -29,9 +53,12 @@ h1{
 .food-cards__container{
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
     justify-content: center;
+    gap: 80px;
     white-space: pre-line;
+}
+html.no-flexboxlegacy .food-cards__container{
+    justify-content: space-around;
 }
 .food-card__content{
     position: relative;
@@ -44,13 +71,26 @@ h1{
     background-position: bottom left;
     background-repeat: no-repeat;
     margin-bottom: 14px;
+    overflow: hidden;
+    clip-path: polygon(43px 0, 100% 0, 100% 100%, 0 100%, 0 43px);
     cursor: pointer;
+}
+.food-card__content::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    border-bottom: inherit;
+    transform: rotate(-45deg);
+    transform-origin: 0px 0px;
+    top: 44px;
+    left: -10px;
 }
 .food-card__content_choosed{
     border-color:  #D91667;
 }
 .food-card__content_disabled{
     border-color: #B3B3B3;
+    cursor: default;
 }
 .food-card__content_disabled > *{
     color: #B3B3B3;

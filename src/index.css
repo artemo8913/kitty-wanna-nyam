@@ -4,6 +4,10 @@ Yahoo! CSS Reset (YUI 2)
 *{
     box-sizing: border-box;
 }
+html,body,#root{
+	height: 100%;
+	width: 100%;
+}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,
 textarea,p,blockquote,th,td { 
 	margin:0;

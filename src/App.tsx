@@ -5,9 +5,7 @@ import FoodCard from './Components/FoodCard';
 import data from './data'
 
 function App() {
-
   let [foodData, setFoodData] = React.useState(data);
-  console.log(foodData)
   function changeFoodChoosedState(id: number){
     setFoodData(previosState => {
       return previosState.map(food => {
