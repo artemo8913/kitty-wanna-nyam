@@ -28,11 +28,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: #000000;
     background-image: url(../public/Images/bg.png);
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%), url(../public/Images/bg.png);
     padding-bottom: 5px;
@@ -55,8 +50,8 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
-    white-space: pre-line;
 }
+/* For IE */
 html.no-flexboxlegacy .food-cards__container{
     justify-content: space-around;
 }
@@ -84,6 +79,14 @@ html.no-flexboxlegacy .food-cards__container{
     transform-origin: 0px 0px;
     top: 44px;
     left: -10px;
+}
+/* For IE */
+.no-smil .food-card__content{
+    clip-path: none;
+}
+/* For IE */
+.no-smil .food-card__content::after{
+    display: none;
 }
 .food-card__content_choosed{
     border-color:  #D91667;
@@ -115,9 +118,9 @@ html.no-flexboxlegacy .food-cards__container{
     margin: 0px 0px 15px 0px;
 }
 .food-card__info{
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 400;
     color: #666666;
 }
 .food-card__weight{
