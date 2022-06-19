@@ -32,7 +32,7 @@ export default function FoodCard(props: any) {
                     <div className='weight__count'>{props.weight}</div>
                     <div className='weight__unit'>кг</div>
                 </div>
-                <img src='/Images/kitty.png' alt="котэ" />
+                <img src={require('../Images/kitty.png')} alt="котэ" />
             </div>
             <div className={`food-card__attract ${!props.available && 'food-card__attract_disabled'}`}>{attractText}</div>
         </div>
