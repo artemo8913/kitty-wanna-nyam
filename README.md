@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Интернет-магазин "Нямушка"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Квалификационное задание для разработчиков HTML/CSS/JS
 
-## Available Scripts
+##Q1 Чем отличается хорошая верстка от плохой с точки зрения…
 
-In the project directory, you can run:
+а) С точки зрения пользователя хорошая верстка отличается удобством, интерактивным дизайном, интересным оформлением, сайт быстро загружается, не «лагает», доступен с разных устройств, все элементы читаемы, содержимое.
+б) С точки зрения менеджера проекта хорошая верстка соответствует заданию, позволяет быстро и легко вносить в проект нововведения, корректировки (проект легко поддерживается)
+в) С точки зрения дизайнера, думаю, что хорошая верстка это та, которая соответствует его/её задумке)
+г) С точки зрения верстальщика хорошая верстка хорошо выглядит на всех устройствах, имеет понятный, не нагроможденный лишним код, работа которого соответствует требования пользователя, коллег.
+д) С точки зрения клиентского программиста верстка должна быть читаемой, иметь ясную структуры, легко модифицируемой.
+е) Хорошая верстка излишне не нагружает сервер.
 
-### `npm start`
+##Q2 Опишите основные особенности верстки крупных многостраничных сайтов, дизайн которых может меняться в процессе реализации и поддержки.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Многостраничные сайты имеют длительный процесс разработки, чаще всего большую команду разработчиков, а также им требуются техническая поддержка. Поэтому верстка многостраничных сайтов немыслима без компонентного подхода, которая позволяет легко и быстро разрабатывать интерфейсы любой сложности и повторно использовать существующий код. Одним из таких подходов является БЭМ.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##Q3 Опишите основные особенности верстки сайтов, которые должны одинаково хорошо отображаться как на любом современном компьютере, так и на смартфонах и планшетах под управлением iOS и Android. Расскажите о своем опыте верстки подобных сайтов: какие инструменты и технологии вы применяли, как проверяли результат на различных устройствах, какие именно устройства требовалось поддерживать.
 
-### `npm test`
+На данный момент существует огромное множество различных устройств с различными параметрами экрана, с которых пользователь может получить доступ к проектируемому сайту, и пользователь должен получить желаемое) Верстка для различных устройств строится на CSS медиа запросах. Тестировать полученный результат можно как на имеющихся на руках девайсах, так и с помощью инструментов разработчика в браузере.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Q4 Расскажите, какие инструменты помогают вам экономить время в процессе написания, проверки и отладки кода.
 
-### `npm run build`
+Пишу код в Visual Studio Code, в котором имеются сниппеты, различные инструменты, всплывающие подсказки при написании методов, обращении к полям объектов и т.д. Начал применять TypeScript для написания кода (раньше старался использовать JSDoc). Применяю панель разработчика в браузерах, в частности консоль. Если приходится вспоминать какой стандартный метод что возвращает, то либо зайду на MDN Web Docs, либо быстро в консоли Node JS проверю.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Q5 Вам нужно понять, почему страница отображается некорректно в Safari на iOS и в IE на Windows. Код писали не вы, доступа к исходникам у вас нет. Ваши действия? Сталкивались ли вы с подобными проблемами на практике?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Скорее всего на странице имеются CSS свойства, не поддерживаемые данными версиями браузеров. В каждом браузере имеются инструменты разработчика, с помощью которого можно получить доступ к исходным файлам сайта и обнаружить наиболее вероятную причину ошибки.
+Сталкивался скорее с тем, что искал таким образом собственные ошибки.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Q6 Дизайнер отдал вам макет, в котором не показано, как должны выглядеть интерактивные элементы при наведении мыши. Ваши действия?
 
-### `npm run eject`
+Спросить и уточнить у дизайнера, почему в макете нет интерактивных элементов. Быть может он просто не тот документ прислал?) Спрошу, чтобы дизайнер хотел увидеть, какова его задумка. Попробовал бы что-нибудь сам придумать, добавить, предложить.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##Q7 Какие ресурсы вы используете для развития в профессиональной сфере? Приведите несколько конкретных примеров (сайты, блоги и так далее). Какое направление развития вам более близко: JS-программирование, HTML/CSS верстка или что-то ещё? Какие ещё области знаний, кроме тех, что непосредственно относятся к работе, вам интересны?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+В большой степени мне интересен JS, нравится решать алгоритмические задачки.
+Помимо непосредственно программирования интересен дизайн.
+В своей работе и в своем самообразовании использовал/использую:
+https://developer.mozilla.org/ru/ 
+https://www.freecodecamp.org/
+https://scrimba.com/learn/learnreact
+https://metanit.com
+https://www.codewars.com/users/Artem%20Spiryaev
+https://git-scm.com/book/ru/v2/Введение-О-системе-контроля-версий
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Youtube каналы:
+https://www.youtube.com/c/Freecodecamp/videos
+https://www.youtube.com/c/UlbiTV
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+##Q8 Расскажите нам о себе и предоставьте несколько ссылок на последние работы, выполненные вами.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Вкратце о себе могу сказать, что я – доброжелательный, трудолюбивый, неконфликтный, хочу работать в дружной команде.
+На моем сайте-портфолио https://artemo8913.github.io/Curriculum-Vitae/ представлены мои работы  с их описанием.
